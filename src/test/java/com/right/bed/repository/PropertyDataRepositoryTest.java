@@ -16,12 +16,10 @@ import static org.junit.Assert.assertNull;
 /**
  * Created by lekanomotayo on 17/03/2018.
  */
-public class ProeprtyDataRepositoryTest {
+public class PropertyDataRepositoryTest {
 
     PropertyDataRepository propertyDataRepository = new PropertyDataRepository();
 
-    @Rule
-    public final ExpectedException exception = ExpectedException.none();
 
     @Test
     public void testGetPropertyData() throws Exception{

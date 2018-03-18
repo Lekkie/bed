@@ -1,10 +1,3 @@
-
-How to run
-==========
-```shell
-./gradlew bootRun
-```
-
 Requirements
 ===========
 -- Jdk 8
@@ -50,5 +43,12 @@ If your existing Gradle-based build uses the Gradle Wrapper, you can easily upgr
 
 ```Shell
 $ ./gradlew wrapper --gradle-version=4.6 --distribution-type=bin
+```
+
+
+How to run
+==========
+```shell
+./gradle bootRun
 ```
 

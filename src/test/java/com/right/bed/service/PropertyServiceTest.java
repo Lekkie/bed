@@ -5,16 +5,20 @@ import com.rightmove.bed.model.PropertyData;
 import com.rightmove.bed.repository.PropertyDataRepository;
 import com.rightmove.bed.service.PropertyService;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import org.mockito.Mockito;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -24,6 +28,9 @@ public class PropertyServiceTest {
 
     final PropertyDataRepository propertyDataRepository = Mockito.mock(PropertyDataRepository.class);
     PropertyService propertyService = new PropertyService();
+
+    @Rule
+    public final ExpectedException exception = ExpectedException.none();
 
     @Before
     public void start() throws Exception{
@@ -39,12 +46,32 @@ public class PropertyServiceTest {
         assertEquals("Mean price did not match expected value", expected, actual);
     }
 
+    // Test when postcode is not in property list
+    @Test
+    public void testGetNoPostCodeMeanPrice() throws Exception{
+        TestUtils.setField(propertyService, "propertyDataRepository", propertyDataRepository);
+
+        exception.expect(NoSuchElementException.class);
+        exception.expectMessage("No value present");
+        propertyService.getPostCodeMeanPrice("MK40");
+    }
+
     @Test
     public void testGetPropertyTypeAveragePrice() throws Exception{
         TestUtils.setField(propertyService, "propertyDataRepository", propertyDataRepository);
         BigDecimal expected = new BigDecimal("43420.63");
         BigDecimal actual = propertyService.getAveragePropertyPriceDiff("Detached", "Flat");
         assertEquals("Mean price did not match expected value", expected, actual);
+    }
+
+    // Test when property type is not in property list
+    @Test
+    public void testGetNoPropertyTypeAveragePrice() throws Exception{
+        TestUtils.setField(propertyService, "propertyDataRepository", propertyDataRepository);
+
+        exception.expect(NoSuchElementException.class);
+        exception.expectMessage("No value present");
+        propertyService.getPropertyTypeAveragePrice("Semi-Detached");
     }
 
     @Test
