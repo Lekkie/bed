@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.right.bed.repository.ProeprtyDataRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.right.bed.repository.ProeprtyDataRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.right.bed.repository.html">com.right.bed.repository</a> &gt; ProeprtyDataRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5.319s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testGetPropertyData</td>
+<td>5.059s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetPropertyDataBadFile</td>
+<td>0.260s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>00:17:18,484 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+00:17:18,487 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+00:17:18,488 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/lekanomotayo/Dropbox/projects/interviews/bed/build/resources/main/logback.xml]
+00:17:20,647 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+00:17:20,657 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+00:17:20,987 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+00:17:21,357 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+00:17:21,357 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+00:17:21,357 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+00:17:21,360 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to DEBUG
+00:17:21,360 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.springframework] to false
+00:17:21,361 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[org.springframework]
+00:17:21,368 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.hibernate.SQL] to DEBUG
+00:17:21,368 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [org.hibernate.SQL] to false
+00:17:21,368 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[org.hibernate.SQL]
+00:17:21,369 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.currencycloud.fakebook] to DEBUG
+00:17:21,369 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.currencycloud.fakebook] to false
+00:17:21,369 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[com.currencycloud.fakebook]
+00:17:21,369 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+00:17:21,371 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1d648b1d - Registering current configuration as safe fallback point
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J: A number (28600) of logging calls during the initialization phase have been intercepted and are
+SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
+SLF4J: See also http://www.slf4j.org/codes.html#replay
+Exception in thread &quot;pool-2-thread-1&quot; java.lang.RuntimeException: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 3B to java.lang.Integer failed.
+	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:91)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 3B to java.lang.Integer failed.
+	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:71)
+	at com.opencsv.bean.AbstractBeanField.setFieldValue(AbstractBeanField.java:132)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.processField(ProcessCsvLine.java:140)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.processLine(ProcessCsvLine.java:126)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:82)
+	... 3 more
+Caused by: org.apache.commons.beanutils.ConversionException: Error converting from 'String' to 'Integer' For input string: &quot;3B&quot;
+	at org.apache.commons.beanutils.converters.AbstractConverter.handleError(AbstractConverter.java:282)
+	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:177)
+	at org.apache.commons.beanutils.converters.ConverterFacade.convert(ConverterFacade.java:61)
+	at org.apache.commons.beanutils.ConvertUtilsBean.convert(ConvertUtilsBean.java:491)
+	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:63)
+	... 7 more
+Caused by: java.lang.NumberFormatException: For input string: &quot;3B&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.&lt;init&gt;(Integer.java:867)
+	at org.apache.commons.beanutils.converters.NumberConverter.toNumber(NumberConverter.java:433)
+	at org.apache.commons.beanutils.converters.NumberConverter.convertToType(NumberConverter.java:271)
+	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:169)
+	... 10 more
+java.lang.RuntimeException: Error parsing CSV line: 24, values: null
+	at com.opencsv.bean.CsvToBean.parse(CsvToBean.java:366)
+	at com.rightmove.bed.repository.PropertyDataRepository.getPropertyData(PropertyDataRepository.java:47)
+	at com.right.bed.repository.ProeprtyDataRepositoryTest.testGetPropertyDataBadFile(ProeprtyDataRepositoryTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:168)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.opencsv.exceptions.CsvDataTypeMismatchException: Conversion of 3B to java.lang.Integer failed.
+	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:71)
+	at com.opencsv.bean.AbstractBeanField.setFieldValue(AbstractBeanField.java:132)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.processField(ProcessCsvLine.java:140)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.processLine(ProcessCsvLine.java:126)
+	at com.opencsv.bean.concurrent.ProcessCsvLine.run(ProcessCsvLine.java:82)
+	... 3 more
+Caused by: org.apache.commons.beanutils.ConversionException: Error converting from 'String' to 'Integer' For input string: &quot;3B&quot;
+	at org.apache.commons.beanutils.converters.AbstractConverter.handleError(AbstractConverter.java:282)
+	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:177)
+	at org.apache.commons.beanutils.converters.ConverterFacade.convert(ConverterFacade.java:61)
+	at org.apache.commons.beanutils.ConvertUtilsBean.convert(ConvertUtilsBean.java:491)
+	at com.opencsv.bean.BeanFieldPrimitiveTypes.convert(BeanFieldPrimitiveTypes.java:63)
+	... 7 more
+Caused by: java.lang.NumberFormatException: For input string: &quot;3B&quot;
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.&lt;init&gt;(Integer.java:867)
+	at org.apache.commons.beanutils.converters.NumberConverter.toNumber(NumberConverter.java:433)
+	at org.apache.commons.beanutils.converters.NumberConverter.convertToType(NumberConverter.java:271)
+	at org.apache.commons.beanutils.converters.AbstractConverter.convert(AbstractConverter.java:169)
+	... 10 more
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.1</a> at Mar 18, 2018 12:17:23 AM</p>
+</div>
+</div>
+</body>
+</html>

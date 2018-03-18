@@ -1,0 +1,63 @@
+group 'com.rightmove'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+//apply plugin: 'docker'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+buildscript {
+    ext {
+        springBootVersion = '1.5.10.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        //classpath "se.transmode.gradle:gradle-docker:1.2"
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Bed',
+                'Implementation-Version': version,
+                'Main-Class': 'com.avantir.bed.Application'
+    }
+    baseName = project.name
+    version = version
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+
+dependencies {
+
+    compile group: 'com.opencsv', name: 'opencsv', version: '4.0'
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-logging', version: '1.5.10.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '1.5.10.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '1.5.10.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot', version: '1.5.10.RELEASE'
+
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.11'
+    compile group: 'ch.qos.logback', name: 'logback-core', version: '1.1.11'
+    compile group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '4.8'
+
+    //testCompile group: 'com.github.tomakehurst', name: 'wiremock-standalone', version: '2.0.5-beta'
+    testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '1.4.11'
+    testCompile group: 'org.powermock', name: 'powermock-api-mockito', version: '1.4.11'
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.5.7.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

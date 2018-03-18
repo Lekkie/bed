@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.right.bed.service.PropertyServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-03-18T00:17:23" hostname="Lekans-MacBook" time="0.175">
+  <properties/>
+  <testcase name="testGetTopPercentageMostExpensivePropertyPrice" classname="com.right.bed.service.PropertyServiceTest" time="0.127"/>
+  <testcase name="testGetPostCodeMeanPrice" classname="com.right.bed.service.PropertyServiceTest" time="0.028"/>
+  <testcase name="testGetPropertyTypeAveragePrice" classname="com.right.bed.service.PropertyServiceTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
